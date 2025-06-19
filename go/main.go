@@ -10,7 +10,7 @@ import (
 const targetURL = "http://192.168.1.35/open"
 
 func main() {
-    http.HandleFunc("/open", func(w http.ResponseWriter, r *http.Request) {
+    http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
         resp, err := http.Get(targetURL)
         if err != nil {
             http.Error(w, "Failed to reach target", http.StatusBadGateway)
