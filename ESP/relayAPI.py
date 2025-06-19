@@ -4,8 +4,8 @@ import time
 from machine import Pin
 
 # Wi-Fi credentials
-SSID = '🍑'
-PASSWORD = 'miaomiao69?'
+SSID = 'casa gulli'
+PASSWORD = 'welcometocasagulli2025'
 
 # open door delay (in seconds)
 openDelay = 2

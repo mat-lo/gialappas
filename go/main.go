@@ -7,7 +7,7 @@ import (
 	"net/http/httputil"
 )
 
-const targetURL = "http://192.168.1.44:3000/open"
+const targetURL = "http://192.168.1.35/open"
 
 func main() {
     http.HandleFunc("/open", func(w http.ResponseWriter, r *http.Request) {
@@ -22,6 +22,6 @@ func main() {
         w.Write(dump)
     })
 
-    fmt.Println("Server running on :8000")
-    log.Fatal(http.ListenAndServe(":8000", nil))
+    fmt.Println("Server running on :3000")
+    log.Fatal(http.ListenAndServe(":3000", nil))
 }
